@@ -1,1 +1,1 @@
-web: python app.py -preload 
+web: app.py -preload app:app
