@@ -1,6 +1,5 @@
 ﻿absl-py==1.1.0
 asynctest==0.13.0
-attrs @ file:///opt/conda/conda-bld/attrs_1642510447205/work
 blinker==1.4
 brotlipy==0.7.0
 cachetools==5.2.0
