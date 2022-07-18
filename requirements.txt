@@ -1,41 +1,45 @@
-﻿absl-py==1.1.0
+absl-py==1.1.0
+aiohttp 
+aiosignal 
+async-timeout 
 asynctest==0.13.0
+attrs 
 blinker==1.4
 brotlipy==0.7.0
 cachetools==5.2.0
-certifi @ file:///C:/Windows/TEMP/abs_e9b7158a-aa56-4a5b-87b6-c00d295b01fanefpc8_o/croots/recipe/certifi_1655968940823/work/certifi
-cffi @ file:///C:/ci_310/cffi_1642682485096/work
-chardet @ file:///C:/ci/chardet_1607706910910/work
+certifi 
+cffi 
+chardet 
 charset-normalizer==2.1.0
-click @ file:///home/linux1/recipes/ci/click_1610990599742/work
-colorama @ file:///C:/Windows/TEMP/abs_9439aeb1-0254-449a-96f7-33ab5eb17fc8apleb4yn/croots/recipe/colorama_1657009099097/work
-cryptography @ file:///C:/ci/cryptography_1652101770956/work
+click 
+colorama 
+cryptography 
 cycler==0.11.0
-Cython @ file:///C:/ci/cython_1605457674480/work
+Cython 
 distlib==0.3.5
 easydict==1.9
 filelock==3.7.1
-Flask @ file:///home/ktietz/src/ci/flask_1611932660458/work
-Flask-Cors @ file:///tmp/build/80754af9/flask-cors_1609957731919/work
+Flask 
+Flask-Cors 
 fonttools==4.34.4
-frozenlist @ file:///C:/ci/frozenlist_1637767267867/work
+frozenlist
 future==0.18.2
 google-auth==2.9.1
 google-auth-oauthlib==0.4.6
 grpcio==1.47.0
 gunicorn==20.1.0
-idna @ file:///home/linux1/recipes/ci/idna_1610986105248/work
-importlib-metadata @ file:///C:/ci/importlib-metadata_1648562631189/work
+idna 
+importlib-metadata 
 itsdangerous==1.1.0
-Jinja2 @ file:///home/linux1/recipes/ci/jinja2_1610990516718/work
+Jinja2 
 kiwisolver==1.4.4
 Markdown==3.4.1
-MarkupSafe @ file:///C:/ci/markupsafe_1594405949945/work
+MarkupSafe 
 matplotlib==3.5.2
 mkl-fft==1.3.1
-mkl-random @ file:///C:/ci/mkl_random_1626186163140/work
+mkl-random 
 mkl-service==2.3.0
-multidict @ file:///C:/ci/multidict_1607367865052/work
+multidict 
 numpy==1.21.6
 oauthlib==3.2.0
 olefile==0.46
@@ -45,22 +49,22 @@ pandas==1.3.5
 Pillow==9.2.0
 platformdirs==2.5.2
 protobuf==3.19.4
-pyasn1 @ file:///Users/ktietz/demo/mc3/conda-bld/pyasn1_1629708007385/work
+pyasn1 
 pyasn1-modules==0.2.8
-pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
-PyJWT @ file:///C:/ci/pyjwt_1657529476747/work
-pyOpenSSL @ file:///opt/conda/conda-bld/pyopenssl_1643788558760/work
+pycparser 
+PyJWT 
+pyOpenSSL 
 pyparsing==3.0.9
-PySocks @ file:///C:/ci/pysocks_1594394709107/work
-python-dateutil @ file:///home/ktietz/src/ci/python-dateutil_1611928101742/work
-pytz @ file:///C:/Windows/TEMP/abs_90eacd4e-8eff-491e-b26e-f707eba2cbe1ujvbhqz1/croots/recipe/pytz_1654762631027/work
+PySocks 
+python-dateutil 
+pytz 
 PyYAML==6.0
-requests @ file:///tmp/build/80754af9/requests_1608241421344/work
+requests 
 requests-oauthlib==1.3.1
 rsa==4.8
 scipy==1.7.3
 seaborn==0.11.2
-six @ file:///tmp/build/80754af9/six_1644875935023/work
+six 
 tensorboard==2.9.1
 tensorboard-data-server==0.6.1
 tensorboard-plugin-wit==1.8.1
@@ -68,11 +72,11 @@ thop==0.1.1.post2207130030
 torch==1.12.0
 torchvision==0.13.0
 tqdm==4.64.0
-typing-extensions @ file:///tmp/build/80754af9/typing_extensions_1611751222202/work
+typing-extensions 
 urllib3==1.26.10
 virtualenv==20.15.1
-Werkzeug @ file:///home/ktietz/src/ci/werkzeug_1611932622770/work
-win-inet-pton @ file:///C:/ci/win_inet_pton_1605306165655/work
+Werkzeug 
+win-inet-pton 
 wincertstore==0.2
-yarl @ file:///C:/ci/yarl_1606940114600/work
-zipp @ file:///tmp/build/80754af9/zipp_1604001098328/work
+yarl 
+zipp 
