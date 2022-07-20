@@ -7,6 +7,7 @@ from detect import *
 import os
 import torch
 from importlib import import_module
+from datetime import datetime
 # import camera driver
 if os.environ.get('CAMERA'):
     Camera = import_module('camera_' + os.environ['CAMERA']).Camera
@@ -26,7 +27,16 @@ DETECTION_FOLDER = r'./static/detections'
 @app.route('/index')
 def index():
     """Video streaming home page."""
-    return render_template('index.html')
+    # return render_template('index.html')
+    the_time = datetime.now().strftime("%A, %d %b %Y %l:%M %p")
+    # return render_template('index.html')
+    return """
+    <h1>Hello heroku</h1>
+    <p>It is currently {time}.</p>
+    <img src="http://loremflickr.com/600/400" />
+    <h1>linjie</h1>
+    <img src="{{ url_for('video_feed') }}">
+    """.format(time=the_time)
 
 def gen(camera):
     """Video streaming generator function."""
