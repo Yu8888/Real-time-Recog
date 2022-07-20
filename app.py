@@ -27,16 +27,16 @@ DETECTION_FOLDER = r'./static/detections'
 @app.route('/')
 def index():
     """Video streaming home page."""
+    return render_template('index.html')
+    # the_time = datetime.now().strftime("%A, %d %b %Y %l:%M %p")
     # return render_template('index.html')
-    the_time = datetime.now().strftime("%A, %d %b %Y %l:%M %p")
-    # return render_template('index.html')
-    return """
-    <h1>Hello heroku</h1>
-    <p>It is currently {time}.</p>
-    <img src="http://loremflickr.com/600/400" />
-    <h1>linjie</h1>
-    <img src="{{ url_for('video_feed') }}">
-    """.format(time=the_time)
+    # return """
+    # <h1>Hello heroku</h1>
+    # <p>It is currently {time}.</p>
+    # <img src="http://loremflickr.com/600/400" />
+    # <h1>linjie</h1>
+    # <img src="{{ url_for('video_feed') }}">
+    # """.format(time=the_time)
 
 def gen(camera):
     """Video streaming generator function."""
@@ -45,7 +45,7 @@ def gen(camera):
         yield (b'--frame\r\n'
                b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
 
-@app.route('/video_feed')
+@app.route('/videovideo_feedapt-get update && apt-get install libgl1')
 def video_feed():
     """Video streaming route. Put this in the src attribute of an img tag."""
     return Response(gen(Camera()),
