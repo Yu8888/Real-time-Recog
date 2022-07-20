@@ -59,7 +59,7 @@ PyYAML==6.0
 requests 
 requests-oauthlib==1.3.1
 rsa==4.8
-sam-cli==1.37.0
+sam-cli
 scipy==1.7.3
 seaborn==0.11.2
 six 
