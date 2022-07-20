@@ -33,6 +33,7 @@ importlib-metadata
 itsdangerous==1.1.0
 Jinja2 
 kiwisolver==1.4.4
+libgl1
 Markdown==3.4.1
 markupsafe==2.0.1 
 matplotlib==3.5.2
