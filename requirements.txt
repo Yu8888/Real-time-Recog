@@ -36,7 +36,6 @@ kiwisolver==1.4.4
 Markdown==3.4.1
 MarkupSafe 
 matplotlib==3.5.2
-mkl-random 
 mkl-service==2.3.0
 multidict 
 numpy==1.21.6
