@@ -1,3 +1,4 @@
+-f https://download.pytorch.org/whl/torch_stable.html
 absl-py==1.1.0
 aiohttp 
 aiosignal 
@@ -62,7 +63,7 @@ rsa==4.8
 scipy==1.7.3
 seaborn==0.11.2
 six 
-torch==1.12.0
+torch
 urllib3==1.26.10
 virtualenv==20.15.1
 Werkzeug 
