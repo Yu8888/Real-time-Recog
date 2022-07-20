@@ -27,10 +27,10 @@ class Camera(BaseCamera):
     video_source = 'people.mp4'
     def __init__(self):
         if os.environ.get('OPENCV_CAMERA_SOURCE'):
-            print('走了吗')
+            print('Has gone?')
             Camera.set_video_source(int(os.environ['OPENCV_CAMERA_SOURCE']))
         super(Camera, self).__init__()
-        print('走了')
+        print('Has gone!')
     @staticmethod
     def set_video_source(source):
         Camera.video_source = source
@@ -72,7 +72,7 @@ class Camera(BaseCamera):
             color = Camera.compute_color_for_labels(id)
             label = '%d %s %d' % (id, cls_names[i], scores[i])
             label += '%'
-            print("{0}号人物出现！========================================".format(id))
+            print("Number {0} person appeared！========================================".format(id))
             t_size = cv2.getTextSize(label, cv2.FONT_HERSHEY_PLAIN, 2, 2)[0]
             cv2.rectangle(img, (x1, y1), (x2, y2), color, 3)
             cv2.rectangle(
@@ -83,7 +83,7 @@ class Camera(BaseCamera):
     @staticmethod
     def frames():
         logger = Logger()
-        print('初始化过了，。。。。。')
+        print('initialized....')
         camera = cv2.VideoCapture(Camera.video_source)
         if not camera.isOpened():
             raise RuntimeError('Could not start camera.')
@@ -217,13 +217,13 @@ class Camera(BaseCamera):
                             # clses.append([cls.item()])
 
                             label = '%s %.2f' % (names[int(cls)], conf)
-                            print('看看这次打的标签：{0}'.format(label))
+                            print('see the label this time：{0}'.format(label))
 
                             plot_one_box(xyxy, im0, label=label, color=colors[int(cls)], line_thickness=3)
                             # 判断标签是否为人 --linjie
                             if label is not None:
                                 if (label.split())[0] == 'person':
-                                    logger.info('当前进程：{0}.遇到了人'.format(os.getpid()))
+                                    logger.info('The current process：{0}.meet person'.format(os.getpid()))
                                     #print('标签是人')
                                     # distancing(people_coords, im0, dist_thres_lim=(200, 250))
                                     # people_coords.append(xyxy)
