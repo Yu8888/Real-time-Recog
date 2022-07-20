@@ -24,7 +24,7 @@ DETECTION_FOLDER = r'./static/detections'
 
 
 
-@app.route('/index')
+@app.route('/')
 def index():
     """Video streaming home page."""
     # return render_template('index.html')
